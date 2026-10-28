@@ -13,7 +13,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.status(200).json({ estado: 'saludable', version: '2.0.0' });
+  res.status(200).json({
+    estado: 'saludable',
+    version: '2.0.0'
+  });
 });
 
 app.listen(port, '0.0.0.0', () => {
